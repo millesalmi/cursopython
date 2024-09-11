@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color: #d5beed;
+    }
+    
+    /*MARGENS*/
+    .top{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .tap{
+        margin-left: 50px;
+    }
+    .tep{
+        margin-left: 70px;
+    }
+    .caixa{
+        background-color: black;
+       width: 200px;
+       padding: 10px;
+       margin-left: 40%;
+    }
+    .c{
+        background-color: black;
+        width: 300px;
+        padding: 10px;
+        margin-left: 37%;
+    }
+    .ca{
+        background-color: black;
+        width: 350px;
+        padding: 10px;
+        margin-left: 35%;
+    }
+    .cai{
+        background-color: black;
+        width: 350px;
+        padding: 10px;
+        margin-left: 35%;
+    }
+
+    /*FONTES*/
+    .nerko-one-regular {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+    }
+    .nerko {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        color: #7e3cbf;
+    }
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .botao{
+        background-image: linear-gradient(to right, #a98ac7, #7e3cbf);
+        border: none;
+        padding: 15px;
+        color: white;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .botao:hover {
+        background-image: linear-gradient(to right, #8e63b9, #660fbd);
+    }
+
+    .botao:active {
+        background-image: linear-gradient(to right, #8b58be, #6206be);
+    }
+</style>
+</head>
+<body>
+    <p style="text-align: center;" class="nerko-one-regular">INTRODUÇÃO À LINGUAGEM PYTHON</p>
+    <div class="top">
+        <p class="poppins-regular">Python é uma linguagem de programação de alto nível, ou seja, com sintaxe mais simplificada e próxima da linguagem humana, utilizada 
+        nas mais diversas aplicações, como desktop, web, servidores e ciência de dados. Saiba mais sobre ela, sua origem e principais vantagens 
+        neste guia para iniciantes.</p>
+        <p class="poppins-regular">O Python foi lançado no início da década de 90 pelo programador e matemático holandês Guido Van Rossum. A linguagem foi projetada para dar ênfase 
+        no trabalho do desenvolvedor, facilitando a escrita de um código limpo, simples e legível, tanto em aplicações menores quanto em programas mais 
+        complexos. A linguagem oferece recursos como tipagem dinâmica e forte (tipo de dado do valor deve ser do mesmo tipo da variável), orientação a objetos, 
+        multiparadigmas (programação funcional e imperativa), além de recursos poderosos em biblioteca padrão e via módulos e frameworks desenvolvidos 
+        pela comunidade. Seu código é aberto e a utilização é gratuita, rodando em praticamente qualquer sistema operacional.</p>
+    </div>
+    <p style="text-align: center;" class="nerko-one-regular">CONCEITOS BÁSICOS</p>
+    <div class="top">
+        <p class="nerko">SINTAXE</p>
+        <p class="poppins-regular">Python foi originalmente desenvolvido como uma linguagem de ensino, mas sua facilidade de uso e sintaxe 
+            limpa levaram-no a ser adotado por iniciantes e especialistas. A sintaxe da linguagem de programação Python é o conjunto de 
+            regras que define como um programa Python será escrito e interpretado (tanto pelo sistema de execução quanto por leitores humanos).</p>
+        <p class="nerko">ESTRUTURA DO PROGRAMA</p>
+        <p class="poppins-regular">Um programa em python é construído a partir de blocos de código. Um bloco é um pedaço do texto do programa Python que é executado 
+            como uma unidade. A seguir estão os blocos: módulo, corpo de função e definição de classe. Cada comando digitado interativamente 
+            é um bloco. Um arquivo de script é um bloco de código.Um bloco de código é executado em um quadro de execução, este contém algumas informações administrativas e determina onde e como 
+            a execução irá continuar após a conclusão do bloco de código.</p>   
+    </div>
+    <p style="text-align: center;" class="nerko-one-regular">VARIÁVEIS</p>
+    <div class="top"><p class="poppins-regular">As variáveis na linguagem Python são elementos fundamentais para o armazenamento e manipulação de dados dentro de 
+        um programa. Elas funcionam como “caixas” que guardam valores, que podem ser acessados e modificados durante o programa. Para criar 
+        uma variável, é necessário atribuir um valor a ela. Por exemplo, para criar uma variável <b>mês</b> e atribuir o valor “09” basta:</p>
+    </div>
+    
+    <div class="caixa">
+        <p class="poppins-regular" style="color: aqua; text-align: center;">mes = 09</p>
+    </div>
+    
+    <div class="top">
+        <p class="poppins-regular">Existem algumas regras para criar uma variável:</p>
+        <ul>
+            <li><p class="poppins-regular">devem iniciar com uma letra ou caractere sublinhado (_);</p></li>
+            <li><p class="poppins-regular">pode conter letras, números e o caractere (_);</p></li>
+            <li><p class="poppins-regular">palavras como “if”, “for” e “while” não podem ser utilizadas para variáveis;</p></li>
+        </ul>
+        <p class="nerko">TIPOS DE VARIÁVEIS</p>
+        <p class="poppins-regular">Na linguagem Python, podemos ter diversos tipos de variáveis para diferentes usos dentro da programação.
+            Entre elas temos os seguintes tipos: </p>
+        <ul>
+            <li><p class="poppins-regular"><b>Inteiros (int): </b>são variáveis para números inteiros, sem a parte decimal. Podem ser negativos ou positivos, como: <b>1; 67; -78</b>.</p></li>
+            <li><p class="poppins-regular"><b>Número de ponto flutuante (float): </b>são usadas para números com a parte decimal. Como: <b>3.14; -1.5</b>.</p></li>
+            <li><p class="poppins-regular"><b>Números complexos (complex): </b>são utilizadas para representar números com uma parte real e uma parte imaginária. São definidos na forma <b>a + bi</b>, 
+                onde <b>a</b> e <b>b</b> são números reais, e <b>i</b> é a unidade imaginária. Por exemplo: <b>2 + 3j; -1 + 2j</b>.</p></li>
+            <li><p class="poppins-regular"><b>Strings (str): </b>são utilizadas para representar sequências de caracteres. São definidas entre aspas simples ou duas.Por exemplo:<b> “Olá”</b>.</p></li>
+            <li><p class="poppins-regular"><b>Listas (list): </b>são usadas para armazenar uma coleção ordenada de elementos, podem conter diferentes tipos de dados e podem ser modificadas. Exemplo: <b>[1,2,3]</b>.</p></li>
+            <li><p class="poppins-regular"><b>Teplas (tuple): </b>são bem parecidas com as listas, mas não podem ser modificadas após a sua criação. Exemplo: <b>(1,2,3)</b>.</p></li>
+            <li><p class="poppins-regular"><b>Dicionários (dict): </b>são utilizados para armazenar dados em pares chave-valor. Cada elemento em um dicionário é acessado por uma única chave. Por exemplo: <b>(“nome”: “João”, “idade”: “30”)</b>.</p></li>
+            <li><p class="poppins-regular"><b>Booleanos (bool): </b>representam os valores lógicos <span style="color: rgb(14, 226, 14);">verdadeiro (true)</span> e <span style="color: red;">falso (false)</span>  . Elas são frequentemente usadas em expressões condicionais e loops para controlar o fluxo do programa.</p></li>
+            <li><p class="poppins-regular"><b>Conjuntos (set): </b>em Python, são usados para armazenar coleções não ordenadas de elementos únicos. Eles são úteis quando você precisa verificar se um elemento está presente em uma coleção ou quando deseja eliminar duplicatas de uma lista.</p></li>
+        </ul>
+        <p class="poppins-regular">As variáveis podem ter diversas aplicações, e podem ser utilizadas de maneiras diferentes. A seguir temos 
+            alguns exemplos de utilização de variáveis.</p>
+        <p class="nerko" style="text-align: center;">SOMA DE DOIS NÚMEROS</p>
+        
+        <div class="caixa">
+            <p class="poppins-regular" style="color: white;">a = <span style="color:aqua;">10</span></p>
+            <p class="poppins-regular" style="color: white;">b = <span style="color:aqua;">5</span></p>
+            <p class="poppins-regular" style="color: white;">soma = a + b</p>
+            <p class="poppins-regular" style="color: white;"><span style="color:#7e3cbf;">print </span> (soma)</p>
+       </div> 
+      
+        <p class="poppins-regular">Nesse exemplo, criamos as variáveis “a” e “b” e atribuímos a elas os valores 10 e 5, respectivamente. Em seguida, 
+            criamos uma terceira variável chamada “soma” e atribuímos a ela o resultado da soma entre “a” e “b”. Por fim, utilizamos a função “print()” 
+            para exibir o valor da variável “soma” na saída do programa.</p>
+        <p class="nerko" style="text-align: center;">ÁREA DE UM TRIÂNGULO</p>
+        
+        <div class="c">
+            <p class="poppins-regular" style="color: white;">largura = <span style="color: aqua;">10</span></p>
+            <p class="poppins-regular" style="color: white;">altura = <span style="color: aqua;">5</span></p>
+            <p class="poppins-regular" style="color: white;">area = largura * altura</p>
+            <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print </span> (<span style="color: green;">"A área do retângulo é:"</span>, area)</p>
+        </div>
+    
+        <p class="poppins-regular">Nesse exemplo, declaramos as variáveis "largura" e "altura" e atribuímos a elas os valores 10 e 5, respectivamente. 
+        Em seguida, criamos uma terceira variável chamada "área" e atribuímos a ela o resultado da multiplicação entre "largura" e "altura". Por 
+        fim, utilizamos a função "print()" para exibir a mensagem "A área do retângulo é:" seguida do valor da variável "área".</p>
+        <p class="nerko" style="text-align: center;">VERIFICAÇÃO DE MAIORIDADE</p>
+        
+        <div class="ca">
+            <p class="poppins-regular" style="color: white;">idade = <span style="color: aqua;">18</span></p>
+            <p class="poppins-regular" style="color: white;"><span style="color: orange;">if </span>idade >= <span style="color: aqua;">18:</span></p>
+            <div class="tap">
+                <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print </span>( <span style="color: green;">"Você é maior de idade!"</span>)</p>
+            </div>
+            <p class="poppins-regular" style="color: orange;">else: </p>
+            <div class="tap">
+                <p class="poppins-regular" style="color: green;"><span style="color:#7e3cbf;">print</span>("Você é menor de idade!")</p>
+            </div>
+        </div>
+        
+        <p class="poppins-regular">Nesse exemplo, declaramos a variável "idade" e atribuímos a ela o valor 18. Em seguida, utilizamos uma estrutura condicional if-else 
+        para verificar se a idade é maior ou igual a 18. Se for, exibimos a mensagem "Você é maior de idade!". Caso contrário, exibimos a 
+        mensagem "Você é menor de idade!".</p>
+    </div>
+
+    <p style="text-align: center;" class="nerko-one-regular">OPERADORES</p>
+    <div class="top">
+        <p class="poppins-regular">Operadores em Python são símbolos ou palavras-chave que realizam operações sobre operandos 
+            (valores ou variáveis). Eles permitem realizar cálculos, comparações, operações lógicas e manipulações de dados. Aqui estão os 
+            principais tipos de operadores em Python:</p>
+        <P class="nerko">OPERADORES ARITMÉTICOS</P>
+        <ul>
+            <li><p class="poppins-regular"><b>'+': </b>Adição - Exemplo: '2 + 3' resulta em '5'</p></li>
+            <li><p class="poppins-regular"><b>'-': </b>Subtração - Exemplo: '5 - 2' resulta em '3'</p></li>
+            <li><p class="poppins-regular"><b>'/': </b>Divisão - Exemplo: '10 / 2' resulta em '5.0'</p></li>
+            <li><p class="poppins-regular"><b>'*': </b>Multiplicação - Exemplo: '3 * 4' resulta em '12'</p></li>
+            <li><p class="poppins-regular"><b>'%': </b>Módulo (resto da divisão) - Exemplo: '10 % 3' resulta em '1'</p></li>
+            <li><p class="poppins-regular"><b>'**': </b>Exponenciação (potência) - Exemplo: '2 ** 3' resulta em '8'</p></li>
+            <li><p class="poppins-regular"><b>'//': </b>Divisão inteira (quociente sem o resto) - Exemplo: '10 // 3' resulta em '3'</p></li>
+        </ul>
+
+        <p class="nerko">OPERADORES DE COMPARAÇÃO</p>
+        <ul>
+            <li><p class="poppins-regular"><b>'==': </b>Igual a - Exemplo: '2 == 2' resulta em 'True'</p></li>
+            <li><p class="poppins-regular"><b>'!=': </b>Diferente de - Exemplo: '2 != 3' resulta em 'True'</p></li>
+            <li><p class="poppins-regular"><b>'>': </b>Maior que - Exemplo: '3 > 2' resulta em 'True'</p></li>
+            <li><p class="poppins-regular"><b>'<': </b>Menor que - Exemplo: '2 < 3' resulta em 'True'</p></li>
+            <li><p class="poppins-regular"><b>'>=': </b>Maior ou igual a - Exemplo: '3 >= 2' resulta em 'True'</p></li>
+            <li><p class="poppins-regular"><b>'<=': </b>Menor ou igual a - Exemplo: '2 <= 3' resulta em 'True'</p></li>
+        </ul>
+
+        <p class="nerko">OPERADORES LÓGICOS</p>
+        <ul>
+            <li><p class="poppins-regular"><b>'and': </b>"E" lógico (True se ambos os operandos forem True) - Exemplo: 'True and False' resulta em 'False'</p></li>
+            <li><p class="poppins-regular"><b>'or': </b>"Ou" lógico (True se pelo menos um dos operandos for True) - Exemplo: 'True or False' resulta em 'True'</p></li>
+            <li><p class="poppins-regular"><b>'not': </b>"Negação" lógica (inverte o valor lógico) - Exemplo: 'not True' resulta em 'False'</p></li>
+        </ul>
+
+        <p class="nerko">OPERADORES DE ATRIBUIÇÃO</p>
+        <ul>
+            <li><p class="poppins-regular"><b>'=': </b>Atribuição simples - Exemplo: <b>'x = 5'</b> atribui o valor '5' à variável 'x'</p></li>
+            <li><p class="poppins-regular"><b>'+=': </b>Adição e atribuição - Exemplo: <b>'x += 2'</b> é equivalente a <b>'x = x + 2'</b></p></li>
+            <li><p class="poppins-regular"><b>'-=': </b>Subtração e atribuição - Exemplo: <b>'x -= 2'</b> é equivalente a <b>'x = x - 2'</b></p></li>
+            <li><p class="poppins-regular"><b>'*=': </b>Multiplicação e atribuição - Exemplo: <b>'x *= 3'</b> é equivalente a <b>'x = x * 3'</b></p></li>
+            <li><p class="poppins-regular"><b>'/=': </b>Divisão e atribuição - Exemplo: <b>'x /= 2'</b> é equivalente a <b>'x = x / 2'</b></p></li>
+            <li><p class="poppins-regular"><b>'%=': </b>Módulo e atribuição - Exemplo: <b>'x %= 3'</b> é equivalente a <b>'x = x % 3'</b></p></li>
+        </ul>
+
+        <p class="nerko">OPERADORES DE IDENTIDADE</p>
+        <ul>
+            <li><p class="poppins-regular"><b>'is': </b>verifica se dois objetos são o mesmo (mesma identidade) - Exemplo: <b>'x is y'</b></p></li>
+            <li><p class="poppins-regular"><b>'is not': </b>verifica se dois objetos não são o mesmo - Exemplo: <b>'x is not y'</b></p></li>
+        </ul>
+
+        <p class="nerko">OPERADORES DE PERTENCIMENTO</p>
+        <ul>
+            <li><p class="poppins-regular"><B>'in': </B>verifica se um valor está presente em uma sequência (como uma lista ou string) - Exemplo: <b>"'a' in 'apple'" resulta em `True`</b></p></li>
+            <li><p class="poppins-regular"><B>'not in': </B>verifica se um valor não está presente em uma sequência - Exemplo: <b>"'b' not in 'apple'" resulta em `True`</b></p></li>
+        </ul>
+
+        <p class="nerko">OPERADORES BIT A BIT (bitwise)</p>
+        <ul>
+            <li><p class="poppins-regular"><b>'&': </b>'E' bit a bit</p></li>
+            <li><p class="poppins-regular"><b>'|': </b>'OU' bit a bit</p></li>
+            <li><p class="poppins-regular"><b>'^': </b>'OU exclusivo' (XOR) bit a bit</p></li>
+            <li><p class="poppins-regular"><b>'~': </b>'NEGAÇÃO' bit a bit</p></li>
+            <li><p class="poppins-regular"><b>'<<': </b>Deslocamento à esquerda</p></li>
+            <li><p class="poppins-regular"><b>'>>': </b>Deslocamento à direita</p></li>
+        </ul>
+    </div>
+
+    <p class="nerko-one-regular" style="text-align: center;">VANTAGENS DE PYTHON</p>
+    <div class="top">
+        <p class="poppins-regular">Nesse momento, você deve estar se perguntando quais são as vantagens que essa linguagem traz. Como dito 
+            anteriormente, Python é uma linguagem muito utilizada, e nos oferece diversos benefícios. Veremos alguns deles a seguir: </p>
+        <p class="poppins-regular">A linguagem Python é utilizada em diversas áreas, incluindo web development, análise de dados, inteligência 
+            artificial, automação e mais. O Python também possui uma vasta gama de bibliotecas e frameworks (como Django, Flask, Pandas, NumPy) 
+            que aceleram o desenvolvimento. Além disso, é uma linguagem prática, já que pode ser executado em diferentes plataformas e com 
+        pouca ou nenhuma modificação. </p>
+        <p class="poppins-regular">O Python possui também, ferramentas como Jupyter Notebooks oferecem uma experiência interativa, ideal 
+            para análise de dados e aprendizado de máquina. A simplicidade da linguagem permite um desenvolvimento rápido e eficiente, 
+            reduzindo o tempo necessário para escrever e testar código.</p>
+    </div>
+
+    <p class="nerko-one-regular" style="text-align: center;">DESVANTAGENS DE PYTHON</p>
+    <div class="top">
+        <p class="poppins-regular">Vimos que Python nos oferece diversos recursos vantajosos, a linguagem também tem seus defeitos e lados ruins.
+            Iremos conhecer suas principais desvantagens a seguir. </p>
+        <p class="poppins-regular">Como o python é uma linguagem interpretada, ela acaba se tornando mais lenta em comparação com linguagens 
+            compiladas como o C ou C++. Isso pode ser um problema em aplicações que necessitam uma alta performance. Ele também pode acabar 
+            consumindo mais memória do que outras linguagens, ainda mais quando falamos de grandes aplicações. Isso ocorre devido à forma que 
+            essa linguagem gerencia objetos e memória internamente.</p>
+        <p class="poppins-regular">Por conta do GIL (Global Interpreter Lock), o suporte a multithreading em Python é limitado. Isso 
+            significa que em programas CPU-bound, o multithreading pode não resultar em ganhos de desempenho significativos. O python também não 
+            é a melhor escolha para desenvolvimento de aplicações móveis. Existem poucas bibliotecas e frameworks robustos para esse fim.</p>
+        <p class="poppins-regular">O gerenciamento de diferentes ambientes de Python pode ser complicado, especialmente quando se trabalha em 
+            projetos com múltiplas dependências. Por ser uma linguagem de tipagem dinâmica, muitos erros que poderiam ser detectados em tempo 
+            de compilação em outras linguagens só são descobertos em tempo de execução em Python, o que pode aumentar o tempo de depuração.</p>
+    </div>
+
+    <p class="nerko-one-regular" style="text-align: center;">ONDE PODEMOS UTILIZAR PYTHON?</p>
+    <div class="top">
+        <p class="poppins-regular">Por ser uma linguagem versátil, Python possui diversas aplicações diferentes. Pode ser muito utilizado no 
+            desenvolvimento web, especialmente em frameworks como Django e Flask. Ele permite a criação de sites e aplicações web de forma rápida 
+            e eficiente. É altamente utilizado para ciência de dados, graças a bibliotecas como Pandas, NumPy, Matplotlib e SciPy. Pode ser usado 
+            na manipulação de dados, análise estatística, visualização e machine learning.</p>
+        <p class="poppins-regular">Python também pode ser utilizado para IA, com bibliotecas como TensorFlow, Keras, Scikit-learn e PyTorch, que 
+            facilitam a criação de modelos complexos. Além disso, é uma ótima linguagem para automação, permitindo a criação de scripts para 
+            automatizar tarefas repetitivas, como manipulação de arquivos, testes automáticos e interação com APIs. Também é utilizado para 
+            gerenciar servidores, automação de deploys e monitoramento de sistemas. Python pode ser usado para o desenvolvimento de jogos simples 
+            com a biblioteca Pygame, embora não seja a escolha mais comum para jogos de alta performance.</p>
+    </div>
+    
+    <p class="nerko-one-regular" style="text-align: center;">ESTRUTURAS DE CONTROLE</p>
+    <div class="top">
+        <p class="poppins-regular">Estruturas de controle em Python são usadas para dirigir o fluxo de execução de um programa com base em 
+            condições específicas ou em repetições. As principais estruturas de controle em Python incluem condicionais e loops. Existem tipos de 
+            estruturas de controle, veremos a seguir. </p>
+        <p class="nerko">CONDICIONAIS (if, elif, else)</p>
+        <p class="poppins-regular">As estruturas condicionais são usadas para executar diferentes blocos de código com base em condições 
+            específicas.</p>
+        <ul>
+            <li><p class="poppins-regular"><b>'if': </b>executa um bloco de código se a condição for verdadeira. O IF deve propor alguma coisa. 
+                É preciso escrever o IF e logo depois colocar a condição analisada. Então, em seguida, o bloco de comandos. </p></li>
+            <li><p class="poppins-regular"><b>'elif': </b>executa um bloco de código se a condição anterior (`if` ou `elif`) for falsa e a 
+                nova condição for verdadeira. O elif é uma estrutura intermediária dentro da seção if-else no python e deve vir como um complemento 
+                a ambos. Quando você já tem um IF e um ELSE, mas precisa de uma condição para especificar outra regra, pode usar o elif.</p></li>
+            <li><p class="poppins-regular"><b>'else': </b>executa um bloco de código se todas as condições anteriores (`if` e `elif`) forem falsas.
+                O ELSE surge depois do IF, em complemento lógico a ele. Então, não existe hipótese de escrever um ELSE sem um IF antes. Geralmente,
+                o ELSE não requer um teste, uma comparação, pois ele executa algo caso a comparação do IF não passe. Portanto, você só precisa 
+                declarar o ELSE e adicionar o bloco de comandos. </p></li>
+        </ul>
+    </div>
+
+    <div class="cai">
+        <p class="poppins-regular" style="color: white;">x = <span style="color: aqua;">10</span></p>
+        <p class="poppins-regular" style="color: white;"><span style="color: orange;">if </span>x > <span style="color: aqua;">0</span></p>
+        <div class="tap">
+            <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print </span> (<span style="color: green;">"x é positivo"</span>)</p>
+        </div>
+        <p class="poppins-regular" style="color: white;"><span style="color: orange;">elif </span> x == <span style="color: aqua;">0</span>:</p>
+        <div class="tap">
+            <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print </span>(<span style="color: green;">"x é zero"</span>)</p>
+        </div>
+        <p class="poppins-regular" style="color: white;"><span style="color: orange;">else:</span></p>
+        <div class="tap">
+            <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print</span> (<span style="color: green;">"x é negativo"</span>)</p>
+        </div>
+    </div>
+    <p style="text-align: center;" class="poppins-regular"><b>Neste exemplo, a saída será `x é positivo` porque a condição `x > 0` é verdadeira.</b></p>
+    
+    <div class="top">
+        <p class="nerko">LOOPS (for e while)</p>
+        <P class="poppins-regular">Os loops são usados para repetir um bloco de código várias vezes.</P>
+        <ul>
+            <li><p class="poppins-regular"><b>Loop 'for': </b>o for é usado para iterar sobre uma sequência (como uma lista, tupla, string ou intervalo).</p></li>
+        </ul>
+        <div class="cai">
+            <p class="poppins-regular" style="color: white;"><span style="color: orange;">for </span>i <span style="color: orange;">in </span> <span style="color: #7e3cbf;">range</span>(<span style="color: aqua;">5</span>):</p>
+            <div class="tap">
+                <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print</span>(i)</p>
+            </div>
+        </div>
+        <p class="poppins-regular" style="text-align: center;"><b>Este código imprimirá os números de 0 a 4.</b></p>
+
+        <ul>
+            <li><p class="poppins-regular"><b>Loop 'while': </b>o while continua a executar o bloco de código enquanto a condição for verdadeira.</p></li>
+        </ul>
+        <div class="cai">
+            <p class="poppins-regular" style="color: white;">count = <span style="color: aqua;">0</span></p>
+            <p class="poppins-regular" style="color: white;"><span style="color: orange;">while </span>count < <span style="color:aqua;">5</span>:</p>
+            <div class="tap">
+                <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print</span>(count)</p>
+                <p class="poppins-regular" style="color: white;">count += <span style="color: aqua;">1</span></p>
+            </div>
+        </div>
+        <p class="poppins-regular" style="text-align: center;"><b>Este código imprimirá os números de 0 a 4, incrementando 'count' até que a condição 'count < 5' se torne falsa.</b></p>
+    </div>
+
+    <div class="top">
+        <p class="nerko">COMANDOS DE CONTROLE DE LOOP (break, continue, else)</p>
+        <ul>
+            <li><p class="poppins-regular"><b>break: </b>interrompe o loop antes de sua conclusão natural.</p></li>
+            <li><p class="poppins-regular"><b>continue: </b>pula o restante do bloco de código dentro do loop para a próxima iteração.</p></li>
+            <li><p class="poppins-regular"><b>else:</b>um bloco 'else' opcional pode ser adicionado após um loop 'for' ou 'while', que será executado se o loop for concluído normalmente (sem ser interrompido por um 'break').</p></li>
+        </ul>
+        <div class="cai">
+            <p class="poppins-regular" style="color: white;"><span style="color: orange;">for </span>i <span style="color: orange;">in </span><span style="color: #7e3cbf;">range</span>(<span style="color: aqua;">10</span>):</p>
+            <div class="tap">
+                <p class="poppins-regular" style="color: white;"><span style="color: orange;">if </span>i == <span style="color: aqua;">5</span>:</p>
+            </div>
+            <div class="tep">
+                <p class="poppins-regular" style="color: orange;">break <span style="color: grey;"># Para o loop quando i é 5</span></p>
+                <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print</span>(i)</p>
+            </div> 
+        </div>
+        <p class="poppins-regular" style="text-align: center;"><b>O código acima imprimirá os números de 0 a 4 e depois sairá do loop devido ao 'break'.</b></p>
+
+        <div class="cai">
+            <p class="poppins-regular" style="color: white;"><span style="color: orange;">for </span>i <span style="color: orange;">in </span><span style="color: #7e3cbf;">range</span>(<span style="color: aqua;">10</span>):</p>
+            <div class="tap">
+                <p class="poppins-regular" style="color: white;"><span style="color: orange;">if </span>i %<span style="color: aqua;"> 2 </span>== <span style="color: aqua;">0</span>:</p>
+            </div>
+            <div class="tep">
+                <p class="poppins-regular" style="color: orange;">continue <span style="color: grey;"># Pula a iteração para números pares</span></p>
+                <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print</span>(i)</p>
+            </div>
+        </div>
+        <p class="poppins-regular" style="text-align: center;"><b>O código acima imprimirá apenas os números ímpares de 1 a 9.</b></p>
+
+        <div class="cai">
+            <p class="poppins-regular" style="color: white;"><span style="color: orange;">for </span>i <span style="color: orange;">in </span><span style="color: #7e3cbf;">range</span>(<span style="color: aqua;">5</span>):</p>
+            <div class="tap">
+                <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print</span>(i)</p>
+            </div>
+            <p class="poppins-regular" style="color: orange;">else <span style="color: white;">:</span></p>
+            <div class="tap">
+                <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print</span>(<span style="color: green;">"Loop completo"</span>)</p>
+            </div>
+        </div>
+        <p class="poppins-regular" style="text-align: center;"><b>O código acima imprimirá os números de 0 a 4, seguido por "Loop completo".</b></p>
+    </div>
+
+    <div class="top">
+        <p class="nerko">COMPREENSÕES DE LISTA</p>
+        <p class="poppins-regular">Compreensões de lista são uma forma concisa de criar listas usando loops 'for' dentro de uma expressão.</p>
+        <div class="cai">
+            <p class="poppins-regular" style="color: white;">squares = [x**<span style="color: aqua;">2 </span><span style="color: orange;">for </span>x <span style="color: orange;">in </span><span style="color: #7e3cbf;">range</span>(<span style="color: aqua;">10</span>)]</p>
+            <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print</span>(squares)</p>
+        </div>
+        <p class="poppins-regular" style="text-align: center;"><b>Este código criará uma lista dos quadrados dos números de 0 a 9.</b></p>
+    </div>
+
+    <p class="nerko-one-regular" style="text-align: center;">INSTALAÇÃO</p>
+    <div class="top">
+        <p class="poppins-regular">Agora que você já aprendeu os principais conceitos da linguagem Python, é hora de começar a programar. Afinal, 
+            qual jeito melhor de aprender do que colocando seus conhecimentos em prática? Para começar a programar é necessário um lugar para 
+            realizar seus programas, então, no vídeo abaixo iremos te ensinar a instalar o Python e o aplicativo PyCharm em seu computador.</p>
+        <p class="poppins-regular">Após a instalação, te ensinaremos passo a passo sobre os principais programas iniciais na linguagem Python. 
+            Venha aprender!</p>
+        <p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/46wQyneml_8?si=ggmZmZb6hSPk7AGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+    </div>
+
+
+    <div class="top">
+        <p class="poppins-regular">Agora, com o aplicativo baixado, você pode fazer alguns testes básicos da programação. Aqui temos dois 
+            exemplos para praticar:
+        </p>
+        <ul>
+            <li><p class="poppins-regular"><a href="media.html">Média entre números</a></p></li>
+            <li><p class="poppins-regular"><a href="calculadora.html">Calculadora</a></p></li>
+        </ul>
+        <p class="poppins-regular">Agora é hora de seguirmos para o próximo passo do nosso curso, iremos para o Módulo 2. Essa etapa consiste 
+            em nos aprofundarmos na prática, e iremos ver diversos programas novos em Python. </p>
+    </div>
+    
+    <p style="text-align: center;">
+        <a href="modulo2.html">
+            <button class="botao">Clique para ir para o Módulo 2</button>
+        </a>
+    </p>
+</body>
+</html>
+
+            
+            
+            
+<p class="poppins-regular" style="color: white;"></p>
+<p class="poppins-regular" style="color: white;"></p>
+<p class="poppins-regular" style="color: white;"></p>
+<p class="poppins-regular" style="color: white;"></p>
+<p class="poppins-regular" style="color: white;"></p>
+<p class="poppins-regular" style="color: white;"></p>
+
+

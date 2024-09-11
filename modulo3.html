@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color: #d5beed;
+    }
+
+    /*MARGENS*/
+    .top{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .caixa{
+        background-color: black;
+        width: 350px;
+        padding: 10px;
+        margin-left: 35%;
+    }
+
+    /*FONTES*/
+    .nerko-one-regular {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+    }
+    .nerko {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 40px;
+        color: #7e3cbf;
+    }
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /*BOTÃO*/
+    .botao{
+        background-image: linear-gradient(to right, #a98ac7, #7e3cbf);
+        border: none;
+        padding: 15px;
+        color: white;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .botao:hover {
+        background-image: linear-gradient(to right, #8e63b9, #660fbd);
+    }
+
+    .botao:active {
+        background-image: linear-gradient(to right, #8b58be, #6206be);
+    }
+</style>
+</head>
+<body>
+    <a href="modulo2.html" class="btn btn-danger">Sair</a>
+
+    <p class="nerko-one-regular" style="text-align: center;">ALGORITMOS DE BUSCA</p>
+    <div class="top">
+        <p class="nerko">BUSCA LINEAR</p>
+        <p class="poppins-regular">Este é o algoritmo de busca mais simples. Ele verifica sequencialmente cada elemento de uma lista ou 
+            array até encontrar o elemento desejado. Esse algoritmo é útil para coleções não ordenadas (por exemplo, listas, arrays). Vamos 
+            aprender a utilizá-lo!</p>
+        <p style="text-align: center;"><img src="busca_linear.png"></p>
+        <p class="poppins-regular"><b>Explicação: </b>a primeira linha do código está fazendo a definição da Função <b>busca_linear(arr, alvo)</b>, 
+            que recebe dois parâmetros: arr(uma lista de números) e alvo(o valor que queremos encontrar na lista). Na segunda linha temos um 
+            laço de <b>for i in range(len(arr))</b>; que vai percorrer a lista arr usando o índice i, que vai de 0 até o comprimento da lista 
+            (len(arr)). <b>range(len(arr))</b> cria uma sequência de números começando em 0 até o tamanho da lista, para iterar por cada elemento.</p>
+        <p class="poppins-regular">Na terceira linha temos uma condição <b>if arr[i] == alvo</b>, que para cada iteração, a função verifica 
+            se o elemento no índice i da lista (arr[i]) é igual ao valor que estamos procurando (alvo). Se o valor for encontrado, irá realizar 
+            a a quarta linha, com <b>return i</b>, que faz a função retornar o índice i onde o elemento foi encontrado.</p>
+        <p class="poppins-regular">Na quinta linha temos <b>return -1</b>; se o laço <b>for</b> terminar e o valor alvo não for encontrado 
+        em nenhuma posição da lista, a função retorna -1, indicando que o valor não está presente na lista.</p>
+        <p class="poppins-regular"><b>arr = [10, 20, 30, 40, 50]</b></p>
+        <p class="poppins-regular"><b>resultado = busca_linear(arr, 30)  # Saída: 2</b>, aqui, estamos buscando o valor 30 na lista arr.
+            A função busca_linear vai verificar cada elemento da lista:
+            arr[0] == 10 (não é igual a 30, então continua).
+            arr[1] == 20 (não é igual a 30, então continua).
+            arr[2] == 30 (é igual a 30, então retorna 2, que é o índice onde o número 30 está localizado).</p>
+
+        <p class="nerko">BUSCA BINÁRIA</p>
+        <p class="poppins-regular">Este é um algoritmo de busca mais eficiente para listas ordenadas. Ele divide repetidamente o intervalo 
+            de busca pela metade, descartando a metade que não é relevante. Ele é altamente utlizado apenas em estruturas de dados ordenadas.</p>
+        <p style="text-align: center;"><img src="busca_binaria.png"></p>
+        <p class="poppins-regular"><b>Explicação: busca_binaria(arr, alvo)</b> - definição da Função</p>
+        <p class="poppins-regular"><b>baixo = 0</b> - representa o índice inicial da lista (primeiro elemento).</p>
+        <p class="poppins-regular"><b>alto = len(arr) - 1</b> - representa o índice final da lista (último elemento).</p>
+        <p class="poppins-regular"><b>while baixo <= alto</b> - o laço continua enquanto o valor de baixo for menor ou igual ao valor de alto. 
+            Isso indica que ainda há elementos no intervalo a serem verificados. Se baixo ultrapassar alto, significa que o intervalo acabou e o valor não foi encontrado.</p>
+        <p class="poppins-regular"><b>meio = (baixo + alto) // 2</b> - a cada iteração, o programa calcula o índice meio da lista, que é o ponto central do intervalo atual.</p>
+        <p class="poppins-regular"><b>if arr[meio] == alvo:</b> - se o valor no índice meio da lista for igual ao alvo, a função retorna o índice meio, pois o valor foi encontrado.</p>
+        <p class="poppins-regular"><b>elif arr[meio] < alvo:</b> - se o valor no índice meio for menor que o alvo, significa que o valor desejado está na metade superior da lista.
+            Então, o valor de baixo é atualizado para meio + 1, eliminando a metade inferior da busca.</p>
+        <p class="poppins-regular"><b>else:</b> - se o valor no índice meio for maior que o alvo, significa que o valor desejado está na metade inferior da lista.
+            O valor de alto é atualizado para meio - 1, eliminando a metade superior da busca.</p>
+        <p class="poppins-regular"><b>return -1</b> - se o laço terminar e o valor não for encontrado, a função retorna -1, indicando que o valor não está presente na lista.</p>
+
+
+        <p class="nerko">BUSCA EM STRINGS</p>
+        <p class="poppins-regular">O Python fornece vários métodos embutidos para strings para buscar substrings. É muito utilizado para 
+            trabalhar com dados textuais. Exemplo:</p>
+        <ul>
+            <li><p class="poppins-regular"><b>str.find(substring): </b>Retorna o índice da primeira ocorrência da substring, ou -1 se não for encontrada.</p></li>
+            <li><p class="poppins-regular"><b>str.index(substring): </b>Semelhante a find, mas gera um erro se não for encontrada.</p></li>
+        </ul>
+        <p style="text-align: center;"><img src="busca_strings.png"></p>
+        <p class="poppins-regular"><b>Explicação: </b>criamos uma varíavel <b>s</b> e armazenamos o valor "Olá, mundo!' nela. Em <b>s.find("mundo"):</b>
+            o método está procurando pela substring "mundo" na string s. A substring "mundo" começa na posição 5 da string "Olá, mundo!", 
+            então a função find() retorna o índice 5.</p>
+        <p class="poppins-regular"><b>s.index("mundo"):</b> - Assim como o find(), o método index() encontra a posição onde a substring "mundo" começa, 
+            que é o índice 5. O método index() funciona de forma semelhante ao find(), buscando uma substring dentro da string original. A diferença 
+            é que, se a substring não for encontrada, ele lança uma exceção (ValueError), em vez de retornar -1.</p>
+        
+
+        <p class="nerko">BUSCA EM DICIONÁRIOS</p>
+        <p class="poppins-regular">A busca em dicionários (tabelas de hash) é muito eficiente, pois as chaves do dicionário são "hashed". Pode 
+            ser utilizado quando você precisa procurar chaves específicas em um dicionário.</p>
+        <p style="text-align: center;"><img src="busca_dict.png"></p>
+        <p class="poppins-regular"><b>Explicação: </b>o dicionário <b>dados</b> armazena três pares chave-valor. O código verifica se a chave 
+            'idade' está presente no dicionário. Se a chave existir, o valor correspondente (25) é impresso.</p>
+        
+
+        <p class="nerko">BUSCA COM EXPRESSÕES REGULARES (Regex)</p>
+        <p class="poppins-regular">Para buscas baseadas em padrões em strings, você pode usar o módulo re para buscar padrões usando 
+            expressões regulares. Útil quando você precisa de padrões complexos de busca em strings.</p>
+        <p style="text-align: center;"><img src="busca_regex.png"></p>
+        <p class="poppins-regular"><b>Explicação: re.search()</b> procura na string texto por um padrão de número de telefone usando uma 
+            expressão regular. Se o número for encontrado, o objeto <b>correspondencia</b> contém o resultado. O método <b>.group()</b> exibe o 
+            texto que correspondeu ao padrão. A saída será o número de telefone formatado encontrado na string.</p>
+        
+
+        <p class="nerko">BUSCA EM LARGURA (BFS) E BUSCA EM PROFUNDIDADE (DFS)</p>
+        <p class="poppins-regular">São algoritmos de busca em grafos/árvores usados para percorrer ou buscar em grafos ou árvores. São 
+            tipicamente utilizados em problemas mais avançados, como busca de caminhos, desenvolvimento de jogos ou análise de redes.</p>
+        <p style="text-align: center;"><img src="busca_sla.png"></p>
+        <p class="poppins-regular"><b>Explicação: </b>a função <b>dfs()</b> realiza uma busca em profundidade recursiva em um grafo.
+            A função visita o nó de início e explora seus vizinhos de forma recursiva, até que todos os nós conectados sejam visitados.
+            O conjunto visitados previne visitas repetidas a nós, evitando loops.</p>       
+    </div>
+    
+    <p class="nerko-one-regular" style="text-align: center;">ALGORITMOS DE ORDENAÇÃO</p>
+    <div class="top">
+        <p class="nerko">BOLHA</p>
+        <p class="poppins-regular">Compara pares de elementos adjacentes e os troca se estiverem na ordem errada. Esse processo é repetido 
+            até que a lista esteja ordenada.</p>
+        <p style="text-align: center;"><img src="bolha.png"></p>
+
+        <p class="nerko">ORDENAÇÃO POR SELEÇÃO</p>
+        <p class="poppins-regular">Encontra o menor elemento em cada iteração e o coloca na posição correta. Repetido para o próximo menor elemento.</p>
+        <p style="text-align: center;"><img src="selecao.png"></p>
+
+        <p class="nerko">ORDENAÇÃO POR INSERÇÃO</p>
+        <p class="poppins-regular">Constrói a ordenação final um item de cada vez, movendo elementos maiores para a direita e inserindo o elemento atual 
+            no local correto.</p>
+        <p style="text-align: center;"><img src="insercao.png"></p>
+
+        <p class="nerko">ORDENAÇÃO POR MERGESORT</p>
+        <p class="poppins-regular">Divide a lista em duas metades, ordena cada metade recursivamente e depois as combina.</p>
+        <p style="text-align: center;"><img src="mergesort.png"></p>
+
+        <p class="nerko">ORDENAÇÃO POR QUICKSORT</p>
+        <p class="poppins-regular">Seleciona um "pivô" e particiona a lista em elementos menores e maiores que o pivô, ordenando recursivamente.</p>
+        <p style="text-align: center;"><img src="quicksort.png"></p>
+
+        <p class="nerko">ORDENAÇÃO POR HEAP SORT</p>
+        <p class="poppins-regular">Constrói um heap (uma árvore binária completa) e retira os maiores elementos de forma ordenada.</p>
+        <p style="text-align: center;"><img src="heap_sort.png"></p>
+
+        <p class="nerko">ORDENAÇÃO POR CONTAGEM</p>
+        <p class="poppins-regular">Conta a frequência de cada valor e usa essa informação para ordenar a lista. Funciona melhor com inteiros e intervalos limitados.</p>
+        <p style="text-align: center;"><img src="contagem.png"></p>
+
+        <p class="nerko">ORDENAÇÃO POR RADIX</p>
+        <p class="poppins-regular">Ordena números inteiros processando dígitos individuais. Funciona melhor com números inteiros e tem uma complexidade linear para um número fixo de dígitos.</p>
+        <p style="text-align: center;"><img src="radix.png"></p>
+    </div>
+
+    <p style="text-align: center;">
+        <a href="https://www.mediafire.com/file/qmwzg9dl7h8t9yz/app.exe/file">
+            <button class="botao">Aplicativo de Criptografia</button>
+        </a>
+    </p>
+</body>
+</html>
+

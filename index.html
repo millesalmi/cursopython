@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title>Curso Python</title>
+    <meta charset="utf-8">
+<style>
+    body{
+        background-color: #d5beed;
+    }
+
+    #div-diagonal {
+        margin-top: -30px;
+        margin-left: -300px;
+        width: 950px;
+        height: 500px;
+        background: #7e3cbf;
+        -webkit-transform: skew(40deg);
+        -ms-transform: skew(40deg);
+        transform: skew(40deg); 
+    }
+
+    #div-dig {
+        margin-left: -300px;
+        width: 950px;
+        height: 500px;
+        background: #7e3cbf;
+        -webkit-transform: skew(-40deg); 
+        -ms-transform: skew(-40deg); 
+        transform: skew(-40deg); 
+    }
+
+    #div-img{
+        margin-left: 30px;
+        -webkit-transform: skew(-40deg);
+        -ms-transform: skew(-40deg);
+        transform: skew(-40deg); 
+
+    }
+    .column {
+        float: left;
+        width: 55%;
+    }
+
+    .column.side {
+        float: right;
+        width: 45%;
+    }
+
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+        .column, .column.side {
+        width: 100%;
+        }
+    }
+
+    .box{
+        color: black;
+        position: absolute;
+        top: 47%;
+        left: 75%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0);
+        padding: 15px;
+        border-radius: 15px;
+        width: 35%;
+    }
+    /*FONTES*/
+    .nerko-one-regular {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+    }
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="column">
+        <div id="div-diagonal">
+            <div id="div-img">
+                <p style="text-align: center;"><img src="v (1).png" style="width: 480px;height: 480px; padding: 100px;"></p>
+            </div>
+        </div>
+        <div id="div-dig"></div>
+    </div>
+
+    <div class="column.side">
+        <div class="box">
+            <p class="nerko-one-regular"> DESEJA APRENDER A PROGRAMAR EM PYTHON?</p>
+            <p class="poppins-regular">O Python é uma linguagem de programação amplamente utilizada nos dias atuais em aplicações da Web, 
+                desenvolvimento de software, ciência de dados e machine learning. O Python é comumente utilizado porque é uma linguagem eficiente e 
+                de fácil aprendizagem.</p>
+            <p class="poppins-regular">Em nosso curso, iremos te ensinar tudo que você precisa saber para começar a programar nessa linguagem. Se 
+                você pretende aprender essa linguagem desde o começo, nosso curso é a oportunidade perfeita. Venha conferir!</p>
+            <p class="poppins-regular" style="text-align: center;"><a href="modulo1.html">Venha aprender a programar!</a></p>
+        </div>
+    </div>     
+</body>
+</html>

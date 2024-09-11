@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color: #d5beed;
+    }
+
+    /*MARGENS*/
+    .top{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .caixa{
+        background-color: black;
+        padding: 10px;
+        width: 650px;
+        margin-left: 27%;
+        border: 15px solid #6206be;
+        border-radius: 10px;
+        color: white;
+    }
+
+    /*FONTES*/
+    .nerko-one-regular {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+    }
+    .nerko {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        color: #7e3cbf;
+    }
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /*BOTÃO*/
+    .botao{
+        background-image: linear-gradient(to right, #a98ac7, #7e3cbf);
+        border: none;
+        padding: 15px;
+        color: white;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        width: 200px;
+    }
+
+    .botao:hover {
+        background-image: linear-gradient(to right, #8e63b9, #660fbd);
+    }
+
+    .botao:active {
+        background-image: linear-gradient(to right, #8b58be, #6206be);
+    }
+</style>
+</head>
+<body>
+    <a href="modulo2.html" class="btn btn-danger">Sair</a>
+
+    <p class="nerko-one-regular" style="text-align: center;">VETORES / LISTAS</p>
+    <div class="top">
+        <p class="poppins-regular">Nessa etapa, iremos aprender <b>vetores</b>, também conhecidos como <b>listas</b> em Python. Vetores são 
+        estruturas essenciais para aprimorar suas habilidades e utilizar esses conhecimentos em programas mais complexos. </p>
+    </div>
+    <p class="nerko" style="text-align: center;">COMANDOS BÁSICOS</p>
+    <p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/v1Wyt3RAbUc?si=LJOIIqq0SH3Ex6uL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+
+    <p class="nerko" style="text-align: center;">EXERCÍCIOS</p>
+    <div class="top">
+        <p class="poppins-regular">Agora que você aprendeu os comandos necessários para lidar com listas, é hora de colocar seu conhecimento em 
+            prática! Aqui vamos propor alguns exercícios para você praticar em casa, tente resolvê - los e depois confira a resolução!
+        </p>
+    </div>
+
+    <p style="text-align: center;">
+        <div class="caixa">
+            <p class="poppins-regular"><span style="color: aqua;">EXERCÍCIO 01: </span>Faça um programa que leia <b>5 valores numéricos</b> e guarde-os em uma 
+            lista.</p>
+            <p class="poppins-regular">No final, mostre qual foi o maior e o meor valor digitado e as suas respectivas posições na lista.</p>
+            <p class="poppins-regular"><span style="color: aqua;">EXERCÍCIO 02: </span>Crie um programa onde o usuário possa digitar vários valores 
+            numéricos e cadastre-os em uma lista.
+        Caso o número já exista lá dentro, ele não será adicionado.</p>
+            <p class="poppins-regular">No final, serão exibidos todos os valores únicos digitados, em ordem crescente.</p>
+            <p class="poppins-regular"><span style="color: aqua;">EXERCÍCIO 03: </span>Crie um programa onde o usuário possa digitar cinco valores 
+            numéricos e cadastre-os em uma lista, 
+        já na posição correta de inserção (ordenado, sem utilizar o <b>sort()</b>). No final, mostre a lista ordenada.</p>
+            <p class="poppins-regular"><span style="color: aqua;">EXERCÍCIO 04: </span>Crie um programa que vai ler vários números e colocar em uma 
+            lista. Depois disso, mostre:</p>
+            <ul>
+                <li><p class="poppins-regular">A) Quantos números foram digitados.</p></li>
+                <li><p class="poppins-regular">B) A lista de valores, ordenada de forma descrescente.</p></li>
+                <li><p class="poppins-regular">C) Se o valor 5 foi digitado e está ou não na lista.</p></li>
+            </ul>
+        </div>
+    </p>
+    <div class="top">
+        <p class="poppins-regular">A seguir temos a resolução dos exercícios, para você apenas conferir!</p>
+        <ul>
+            <li><p class="poppins-regular"><a href="https://drive.google.com/file/d/1f7d-DsehWT5mIhez8i0L4Y6IqsSeUG1M/view?usp=sharing" download="">Exercício 01</a></p></li>
+            <li><p class="poppins-regular"><a href="https://drive.google.com/file/d/1HNghb1g5j7IRHd8vrIb7uyE0bINfC_4X/view?usp=sharing" download>Exercício 02</a></p></li>
+            <li><p class="poppins-regular"><a href="https://drive.google.com/file/d/14siF6JU-boWh0kdjPHC6m-kxbbqpEQZc/view?usp=sharing" download>Exercício 03</a></p></li>
+            <li><p class="poppins-regular"><a href="https://drive.google.com/file/d/1q6UFWJhWkORAhKq17thdZIHK-mPQ8Z60/view?usp=sharing" download>Exercício 04</a></p></li>
+        </ul>
+        <p class="poppins-regular">Agora que te ensinamos a dominar as listas, podemos partir para o próximo ensinamento da etapa dois, 
+            em que você irá aprender a manusear matrizes em Python! Venha conosco aprender!
+        </p>
+    </div>
+
+    <p style="text-align: center;">
+        <a href="matriz.html">
+            <button class="botao">Matrizes</button>
+        </a>
+    </p>
+    
+</body>
+</html>
+<li><p class="poppins-regular"><a href="" download></a></p></li>

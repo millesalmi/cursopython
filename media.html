@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média entre números</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color: #d5beed;
+    }
+
+    .navbar{
+        background-image: linear-gradient(to right, #a98ac7,#7e3cbf);
+    }
+
+
+    /*MARGENS*/
+    .caixa{
+        background-color: black;
+        width: 550px;
+        padding: 10px;
+        margin-left: 25%;
+    }
+    .top{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    /*FONTES*/
+    .nerko-one-regular {
+        font-family: "Nerko One", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+    }
+    
+    .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#"data-target="slide-out" class="sidenav-trigger">
+            <i class="materisl-icons">menu</i>
+        </a>
+        <div class="nav-wrapper container"> 
+
+            <!-- logo-->
+             <div class="brand-logo light">Programa simples</div>
+             <!-- menu desktop-->
+              <ul class="right hide-on-med-and-down">
+                <li><a href="modulo1.html">Etapa 1</a> </li>
+                <li><a href="tabuada.html">Calculadora</a> </li>
+              </ul>
+              <!-- menu mobile-->
+               <ul id="slide-out" class="sidenav">
+                <li><a href="modulo1.html">Etapa 1 </a></li>
+                <li><a href="tabuada.html">Calculadora</a></li>
+               </ul>
+        </div>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <p class="nerko-one-regular" style="text-align: center;">CÁLCULO DE MÉDIA DE TRÊS NÚMEROS</p>
+    <div class="top">
+        <p class="poppins-regular">Nesse programa, nós iremos calcular a média entre três números. É um programa simples, e pode ser realizado
+            rapidamente para praticar.</p>
+        <div class="caixa">
+            <p class="poppins-regular" style="color: grey;"># Solicita ao usuário que insira três números</p>
+            <p class="poppins-regular" style="color: white;">num1 = <span style="color: #7e3cbf;">float</span>(<span style="color: #7e3cbf;">input</span>(<span style="color: green;">"Digite o primeiro número: "</span>))</p>
+            <p class="poppins-regular" style="color: white;">num2 = <span style="color: #7e3cbf;">float</span>(<span style="color: #7e3cbf;">input</span>(<span style="color: green;">"Digite o segundo número: "</span>))</p>
+            <p class="poppins-regular" style="color: white;">num3 = <span style="color: #7e3cbf;">float</span>(<span style="color: #7e3cbf;">input</span>(<span style="color: green;">"Digite o terceiro número: "</span>))</p>
+            <p class="poppins-regular" style="color: grey;"># Calcula a média</p>
+            <p class="poppins-regular" style="color: white;">media = (num1 + num2 + num3) / <span style="color: aqua;">3</span></p>
+            <p class="poppins-regular" style="color: grey;"># Exibe o resultado</p>
+            <p class="poppins-regular" style="color: white;"><span style="color: #7e3cbf;">print</span>(<span style="color: green;">f"A média dos três números é: </span><span style="color: orange;">{</span>media<span style="color: orange;">}<span style="color: green;">"</span>)</p>
+        </div>
+        <p class="poppins-regular">Ao realizar esse programa você terá o seguinte resultado: </p>
+        <p style="text-align: center;"><img src="C:\Users\famil\OneDrive\Imagens\Capturas de tela\media.png" style="width: 1072px; height: 369px;"></p>
+    </div>
+</body>
+</html>
